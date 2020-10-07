@@ -3,3 +3,9 @@
 	border-radius: 15px;
 	padding: 10px;
 }
+#sec1 h3{
+	text-transform: uppercase;
+}
+#mailInfo th{
+	width: 10%;
+}
