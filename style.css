@@ -3,9 +3,23 @@
 	border-radius: 15px;
 	padding: 10px;
 }
-#sec1 h3{
+#top h3{
 	text-transform: uppercase;
 }
 #mailInfo th{
 	width: 10%;
+}
+
+#mailInfo td{
+	width: 90%;
+}
+
+.table td, .table th {
+    padding: .25rem !important;
+}
+hr{
+	background: #666;
+}
+#msgBody h6{
+	text-decoration: underline;
 }
