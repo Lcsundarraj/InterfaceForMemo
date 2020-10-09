@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link href="style.css" rel="stylesheet">
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
       <title>Memo</title>
    </head>
    <body>
@@ -17,7 +17,11 @@
             </div>
          </div>
          <form>
-            <div class="row sec1 mb-4">
+
+            <!-- Memo Details -->
+            
+            <fieldset  class="row sec1 mb-4">
+               <legend>Memo Details</legend>
                <div class="form-group col-lg-4 col-sm-12">
                   <label for="exampleFormControlInput1">Memo type</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Memo Type">
@@ -30,8 +34,12 @@
                   <label for="exampleFormControlInput1">Date</label>
                   <input type="Date" class="form-control" id="exampleFormControlInput1" placeholder="Enter Date">
                </div>
-            </div>
-            <div class="row sec1 mb-4">
+            </fieldset>
+            
+
+            <!-- Mailing Details -->
+            <fieldset  class="row sec1 mb-4">
+               <legend>Mailing Info</legend>
                <div class="form-group col-sm-12 col-lg-6 col-xs-12 col-md-12">
                   <label for="exampleFormControlInput1">To</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -44,9 +52,11 @@
                   <label for="exampleFormControlInput1">Subject</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
                </div>
-            </div>
-            <div class="row sec1 mb-4">
+            </fieldset>
 
+            <!-- Message Body (Paragraph) -->
+            <fieldset  class="row sec1 mb-4">
+               <legend>Message Body (Paragraph)</legend>
                <div class="form-group col-sm-12 col-lg-6 col-xs-12 col-md-12">
                   <label for="exampleFormControlInput1">Message Body (Paragraph)</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Paragraph">
@@ -127,8 +137,11 @@
                   <label for="exampleFormControlInput1">Message Body (Paragraph)</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Paragraph">
                </div>
-            </div>
-            <div class="row sec1 mb-4">
+            </fieldset>
+
+            <!-- ordered n unordered checkboxes -->
+           <fieldset  class="row sec1 mb-4 bg bg-light">
+               <legend>List Type Selector</legend>
                <div class="form-check  col-sm-12 col-lg-6 col-xs-12 col-md-12">
                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                  <label class="form-check-label" for="defaultCheck1">
@@ -141,9 +154,181 @@
                    UnOrdered List
                  </label>
                </div>
-            </div>
-            <div class="row sec1 mb-4">
-               
+            </fieldset>
+
+            <!-- Ordered & unordered list Section -->
+            <fieldset  class="row sec1 mb-4">
+               <legend>List Section</legend>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+
+
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List1_header">List1_header</label>
+                  <input type="text" class="form-control" id="List1_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List1">List1</label>
+                  <input type="text" class="form-control" id="List1" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-4 col-xs-12 col-md-12">
+                  <label for="List2_header">List2_header</label>
+                  <input type="text" class="form-control" id="List2_header" placeholder="List">
+               </div>
+               <div class="form-group col-sm-12 col-lg-8 col-xs-12 col-md-12">
+                  <label for="List2">List2</label>
+                  <input type="text" class="form-control" id="List2" placeholder="List">
+               </div>
+
+            </fieldset>
+
+            <!-- Contact Person-->
+            <fieldset  class="row sec1 mb-4">
+               <legend>Contact Person Info</legend>
                <div class="form-group  col-sm-12 col-lg-6 col-xs-12 col-md-12">
                   <label for="exampleFormControlInput1">Contact Person</label>
                   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Contact Person with Designation">
@@ -185,17 +370,19 @@
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                </div>
 
-            </div>
-            <div class="row float-right">
+            </fieldset>
+            <div class="row float-right mb-4">
                <button type="button" class="btn btn-primary btn-lg">Submit</button>
                <button type="button" class="btn btn-secondary btn-lg ml-4">Reset</button>
             </div>
          </form>
       </div>
       </div>
+
+
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
    </body>
 </html>
